@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "uptradertask"
+version = "0.1.0"
+description = ""
+authors = ["Igor Kartel <igor.v.kartel@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.1.2"
+black = "^24.10.0"
+isort = "^5.13.2"
+pre-commit = "^4.0.1"
+pydantic = "^2.9.2"
+pydantic-settings = "^2.6.0"
+pydantic-extra-types = "^2.9.0"
+psycopg2-binary = "^2.9.10"
+
+[tool.black]
+line-length = 109
+target-version = ['py310', 'py311', 'py312']
+
+[tool.isort]
+profile = "black"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
